@@ -26,6 +26,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">REACT Star Wars API</h1>
         </header>
+        <button onClick={this._getData}>
+          USE THE FORCE
+          press me!
+        </button>
         <p className="App-intro">
 
         </p>
