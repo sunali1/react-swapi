@@ -30,8 +30,10 @@ class App extends Component {
           USE THE FORCE
           press me!
         </button>
-        <p className="App-intro">
-
+        <p>{this.state.people.map((single, name) => {
+              return<li key= {single.index}>{single.name}</li>
+              })
+            }
         </p>
       </div>
     );
