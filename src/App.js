@@ -8,7 +8,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = { people: [] };
-    //this._getData = this._getData.bind(this);
+    this._getData = this.getData.bind(this);
   }
   getData() {
     fetch(URL + QUERY)
@@ -18,8 +18,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.getData(),
-      `2 render this.state.people ${this.state.people}`)
     return (
       <div className="App">
         <header className="App-header">
