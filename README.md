@@ -18,5 +18,6 @@ A React app to fetch data from Star Wars API
 ## Conclusion
 
 ## Improvements
+Button in a its own component?
 
 ## Next Steps

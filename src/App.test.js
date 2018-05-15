@@ -14,3 +14,8 @@ it('has a "press me" button', () => {
   const text = wrapper.find('button').text()
   expect(text).toEqual('USE THE FORCE press me!')
 })
+
+it('would start with an empty state []', () => {
+  const wrapper = shallow(<App />)
+  expect(wrapper.state('people')).toEqual([])
+})
